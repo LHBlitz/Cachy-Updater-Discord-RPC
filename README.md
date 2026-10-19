@@ -1,7 +1,7 @@
 # Cachy Updater Discord RPC
 
 Requirements:
-[CachyOS](https://cachyos.org/), Python 3, a custom [Discord application](https://discord.com/developers/applications), and your Discord client. 
+[CachyOS](https://cachyos.org/), [Python 3](https://www.python.org/), a custom [Discord application](https://discord.com/developers/applications), and your Discord client. 
 You can put this in your terminal for a quick install: python3 -m pip install pypresence --user --break-system-packages
 
 Usage:
