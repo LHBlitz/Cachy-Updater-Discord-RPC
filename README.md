@@ -1,3 +1,3 @@
-# Cachy-Updater-Discord-RPC
+# Cachy Updater Discord RPC
 
 W.I.P
