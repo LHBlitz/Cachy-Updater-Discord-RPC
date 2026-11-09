@@ -2,7 +2,7 @@ import time
 import subprocess
 from pypresence import Presence
 
-CLIENT_ID = ''
+CLIENT_ID = '1561502376131694743'
 
 def get_update_count():
     try:
@@ -16,12 +16,19 @@ try:
     print("Connecting to Discord RPC...")
     rpc = Presence(CLIENT_ID)
     rpc.connect()
+    rpc_buttons = [
+        {"label": "CachyOS", "url": "https://cachyos.org"},
+        {"label": "RPC Repo", "url": "https://github.com/LHBlitz/Cachy-Updater-Discord-RPC"}
+    ]
 
     rpc.update(
         details="CachyOS Maintenance",
         state="Checking for updates...",
         large_image="cachyos_logo",
-        large_text="CachyOS"
+        large_text="CachyOS",
+        small_image="arch_logo",
+        small_text="Arch Linux",
+        buttons=rpc_buttons
     )
 
     count = get_update_count()
@@ -32,7 +39,10 @@ try:
         state=state_msg,
         start=int(time.time()),
         large_image="cachyos_logo",
-        large_text="CachyOS"
+        large_text="CachyOS",
+        small_image="arch_logo",
+        small_text="Arch Linux",
+        buttons=rpc_buttons
     )
     print(f"Discord RPC active: {state_msg}")
 
@@ -42,7 +52,10 @@ try:
         details="CachyOS Maintenance",
         state="Finished updates",
         large_image="cachyos_logo",
-        large_text="CachyOS"
+        large_text="CachyOS",
+        small_image="arch_logo",
+        small_text="Arch Linux",
+        buttons=rpc_buttons
     )
 
     time.sleep(10)
