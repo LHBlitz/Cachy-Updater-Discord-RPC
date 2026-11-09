@@ -2,7 +2,7 @@ import time
 import subprocess
 from pypresence import Presence
 
-CLIENT_ID = '1561502376131694743'
+CLIENT_ID = ''
 
 def get_update_count():
     try:
